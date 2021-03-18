@@ -1,0 +1,22 @@
+<mat-card class="example-card" *ngFor = 'let client of clients'>
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image" ></div>
+    <mat-card-title><strong></strong></mat-card-title>
+    <mat-card-subtitle><strong>{{client.username}}</strong></mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image >
+  <mat-card-content>
+    <p>
+      <strong>{{client.email}}</strong>
+      <br>
+      Thank you for the Purchase. The phone is incredible. The Delivery was so much fast. I highly recommend this Seller.
+    </p><br>
+    <p><strong>Private Telephone: {{client.phone}}  </strong></p>
+
+  </mat-card-content>
+  <!-- <mat-card-actions class="button">
+    <button mat-button>LIKE</button>
+
+    <button mat-button>SHARE</button>
+  </mat-card-actions> -->
+</mat-card>

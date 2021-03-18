@@ -1,0 +1,28 @@
+
+<div class="background-picture">
+
+<mat-card>
+  <mat-card-title>Welcome, please Login</mat-card-title>
+<mat-card-content>
+
+<p>
+  <mat-form-field>
+    <input type="text" matInput placeholder="Username" userName="username" [(ngModel)]='user1'>
+  </mat-form-field>
+</p>
+<br>
+<p>
+  <mat-form-field>
+    <input type="password" matInput placeholder="Password" userPass="password"[(ngModel)]='pass1'>
+  </mat-form-field>
+</p>
+<br>
+<div class="button">
+  <button type="button" (click)='userLogin()' >Login</button><br><br>
+  <p class="user-clicked" *ngIf="incorectPassword">Wrong Password</p>
+</div>
+
+
+</mat-card-content>
+</mat-card>
+</div>

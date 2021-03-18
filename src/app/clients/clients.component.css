@@ -1,0 +1,22 @@
+.example-card {
+  max-width: 400px;
+  float: left;
+  margin-right: 8px;
+  justify-content: center;
+  border: solid black 1.5px;
+  margin-bottom: 4px;
+  padding: auto;
+  margin-top: 6px;
+  margin-left: 6px;
+  font-family: Arial, Helvetica, sans-serif;
+
+  color: black;
+}
+
+.example-header-image {
+  background-image: url('https://previews.123rf.com/images/gmast3r/gmast3r1411/gmast3r141100280/33645487-profile-icon-male-avatar-portrait-casual-person.jpg');
+  background-size: cover;
+
+}
+
+
