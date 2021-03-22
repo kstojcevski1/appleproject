@@ -16,8 +16,7 @@ import { MatCardModule } from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
 import {MatTableModule} from '@angular/material/table';
 import { ClientsComponent } from './clients/clients.component';
-
-
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +27,7 @@ import { ClientsComponent } from './clients/clients.component';
     AppleLaptopsComponent,
     HomeComponent,
     ClientsComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,7 +40,8 @@ import { ClientsComponent } from './clients/clients.component';
     MatSortModule,
     MatCardModule,
     HttpClientModule,
-    MatTableModule
+    MatTableModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -23,5 +23,6 @@ export class ApplePhonesComponent implements OnInit {
       imageHeight: 200,
 
     });
+
   }
 }

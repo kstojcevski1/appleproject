@@ -9,6 +9,9 @@ import Swal from 'sweetalert2';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+
+  constructor(private path : Router) {}
+
   form!: FormGroup;
 
   user1 : string = '';
@@ -22,12 +25,16 @@ export class LoginComponent implements OnInit {
 
   }
 
-
-  constructor(private path : Router) {}
-
   userLogin() {
     if (this.user1 === this.userName && this.pass1 === this.userPass) {
       this.path.navigate(['home'])
+      Swal.fire({
+        title: 'Successfully Entered.',
+        width: 600,
+        padding: '3em',
+        background: '#fff url(/images/trees.png)',
+        backdrop: `rgba(0,0,123,0.4) url("/images/nyan-cat.gif") left top no-repeat`
+      })
     } else {
       Swal.fire({
         icon: 'error',
@@ -50,9 +57,7 @@ export class LoginComponent implements OnInit {
   //   }
   // }
 
-
 //   @Input() error: string | null | undefined;
-
 //   @Output() submitEM = new EventEmitter();
 // }
 
